@@ -15,7 +15,12 @@ describe("calculateDistance function", () => {
 			0
 		);
 		expect(
-			calculateDistance(officeLat, officeLon, partner.lat, partner.lon)
+			calculateDistance(
+				officeLat,
+				officeLon,
+				partner.latitude,
+				partner.longitude
+			)
 		).toBeCloseTo(MAX_DISTANCE);
 	});
 
@@ -29,7 +34,12 @@ describe("calculateDistance function", () => {
 			90
 		);
 		expect(
-			calculateDistance(officeLat, officeLon, partner.lat, partner.lon)
+			calculateDistance(
+				officeLat,
+				officeLon,
+				partner.latitude,
+				partner.longitude
+			)
 		).toBeCloseTo(MAX_DISTANCE);
 	});
 
@@ -41,7 +51,12 @@ describe("calculateDistance function", () => {
 			OFFICE_LOCATION.longitude
 		);
 		expect(
-			calculateDistance(officeLat, officeLon, partner.lat, partner.lon)
+			calculateDistance(
+				officeLat,
+				officeLon,
+				partner.latitude,
+				partner.longitude
+			)
 		).toBeCloseTo(MAX_DISTANCE);
 	});
 

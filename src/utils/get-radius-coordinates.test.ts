@@ -10,8 +10,8 @@ describe("getRandomCoordinates function", () => {
 			OFFICE_LOCATION.latitude,
 			OFFICE_LOCATION.longitude
 		);
-		expect(result).toHaveProperty("lat");
-		expect(result).toHaveProperty("lon");
+		expect(result).toHaveProperty("latitude");
+		expect(result).toHaveProperty("longitude");
 	});
 
 	it("returns coordinates with specified bearing", () => {
@@ -22,8 +22,8 @@ describe("getRandomCoordinates function", () => {
 			MAX_DISTANCE,
 			bearing
 		);
-		expect(result).toHaveProperty("lat");
-		expect(result).toHaveProperty("lon");
+		expect(result).toHaveProperty("latitude");
+		expect(result).toHaveProperty("longitude");
 	});
 
 	it("throws error with bearing out of range", () => {
@@ -47,8 +47,8 @@ describe("getRandomCoordinates function", () => {
 		const distance = calculateDistance(
 			OFFICE_LOCATION.latitude,
 			OFFICE_LOCATION.longitude,
-			result.lat,
-			result.lon
+			result.latitude,
+			result.longitude
 		);
 		expect(distance).toBeCloseTo(MAX_DISTANCE);
 	});

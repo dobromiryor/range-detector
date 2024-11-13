@@ -8,7 +8,7 @@ export const getRadiusCoordinates = (
 	lon: number,
 	distanceKm: number = MAX_DISTANCE,
 	bearing: number = degreesToRadians(Math.random() * 360)
-): { lat: number; lon: number } => {
+): { latitude: number; longitude: number } => {
 	if (bearing > 360 || bearing < 0)
 		throw new Error("Bearing must be between 0 and 360");
 
@@ -29,7 +29,7 @@ export const getRadiusCoordinates = (
 		);
 
 	return {
-		lat: radiansToDegrees(partnerLatRadians),
-		lon: radiansToDegrees(partnerLonRadians),
+		latitude: radiansToDegrees(partnerLatRadians),
+		longitude: radiansToDegrees(partnerLonRadians),
 	};
 };
