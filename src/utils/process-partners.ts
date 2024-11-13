@@ -1,7 +1,7 @@
-import { MAX_DISTANCE } from "../consts/max-distance.const";
-import { OFFICE_LOCATION } from "../consts/offlice-location.const";
-import type { Partner, ProcessedPartner } from "../schemas/partner.schema";
-import { calculateDistance } from "./calculate-distance";
+import { MAX_DISTANCE } from "@/consts/max-distance.const";
+import { OFFICE_LOCATION } from "@/consts/offlice-location.const";
+import type { Partner, ProcessedPartner } from "@/schemas/partner.schema";
+import { calculateDistance } from "@/utils/calculate-distance";
 
 export const processPartners = (
 	partners: Partner[],

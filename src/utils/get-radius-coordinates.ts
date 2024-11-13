@@ -1,7 +1,7 @@
-import { R } from "../consts/earth-radius.const";
-import { MAX_DISTANCE } from "../consts/max-distance.const";
-import { degreesToRadians } from "./degrees-to-radians";
-import { radiansToDegrees } from "./radians-to-degrees";
+import { R } from "@/consts/earth-radius.const";
+import { MAX_DISTANCE } from "@/consts/max-distance.const";
+import { degreesToRadians } from "@/utils/degrees-to-radians";
+import { radiansToDegrees } from "@/utils/radians-to-degrees";
 
 export const getRadiusCoordinates = (
 	lat: number,

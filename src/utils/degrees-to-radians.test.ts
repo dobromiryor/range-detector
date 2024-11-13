@@ -1,5 +1,5 @@
+import { degreesToRadians } from "@/utils/degrees-to-radians";
 import { describe, expect, it } from "vitest";
-import { degreesToRadians } from "./degrees-to-radians";
 
 describe("degreesToRadians function", () => {
 	it("converts positive degrees to radians", () => {

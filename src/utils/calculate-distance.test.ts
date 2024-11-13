@@ -1,8 +1,8 @@
+import { MAX_DISTANCE } from "@/consts/max-distance.const";
+import { OFFICE_LOCATION } from "@/consts/offlice-location.const";
+import { calculateDistance } from "@/utils/calculate-distance";
+import { getRadiusCoordinates } from "@/utils/get-radius-coordinates";
 import { describe, expect, it } from "vitest";
-import { MAX_DISTANCE } from "../consts/max-distance.const";
-import { OFFICE_LOCATION } from "../consts/offlice-location.const";
-import { calculateDistance } from "./calculate-distance";
-import { getRadiusCoordinates } from "./get-radius-coordinates";
 
 describe("calculateDistance function", () => {
 	it("calculates distance between two points on the same latitude", () => {

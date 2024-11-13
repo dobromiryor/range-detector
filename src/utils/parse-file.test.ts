@@ -1,5 +1,5 @@
+import { parsePartnersFromFile } from "@/utils/parse-file";
 import { describe, expect, it } from "vitest";
-import { parsePartnersFromFile } from "./parse-file";
 
 const line1 =
 	'{"latitude": "42.000000", "partner_id": 2, "name": "Ivan Ivanov", "longitude": "24.111111"}';

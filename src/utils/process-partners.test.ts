@@ -1,9 +1,9 @@
+import { MAX_DISTANCE } from "@/consts/max-distance.const";
+import { OFFICE_LOCATION } from "@/consts/offlice-location.const";
+import type { Partner } from "@/schemas/partner.schema";
+import { getRadiusCoordinates } from "@/utils/get-radius-coordinates";
+import { processPartners } from "@/utils/process-partners";
 import { describe, expect, it } from "vitest";
-import { MAX_DISTANCE } from "../consts/max-distance.const";
-import { OFFICE_LOCATION } from "../consts/offlice-location.const";
-import { Partner } from "../schemas/partner.schema";
-import { getRadiusCoordinates } from "./get-radius-coordinates";
-import { processPartners } from "./process-partners";
 
 const getPartnerCoordinates = (distanceKm: number) => {
 	const { latitude, longitude } = getRadiusCoordinates(

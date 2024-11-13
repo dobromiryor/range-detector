@@ -1,4 +1,4 @@
-import { partnerSchema, type Partner } from "../schemas/partner.schema";
+import { partnerSchema, type Partner } from "@/schemas/partner.schema";
 
 export const parsePartnersFromFile = (fileContent: string): Partner[] => {
 	const lines = fileContent.split(/\r?\n/).filter((line) => line.trim() !== "");

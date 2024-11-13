@@ -1,5 +1,5 @@
-import { R } from "../consts/earth-radius.const";
-import { degreesToRadians } from "./degrees-to-radians";
+import { R } from "@/consts/earth-radius.const";
+import { degreesToRadians } from "@/utils/degrees-to-radians";
 
 export const calculateDistance = (
 	officeLat: number,
